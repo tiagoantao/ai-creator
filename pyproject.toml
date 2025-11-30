@@ -1,0 +1,52 @@
+[project]
+name = "ai-creator"
+version = "0.1.0"
+description = "Creating using AI"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi>=0.123.0",
+  "pydantic>=2.12.5",
+  "rich>=14.2.0",
+  "streamlit>=1.51.0",
+  "typer>=0.20.0",
+]
+
+[dependency-groups]
+dev = ["lefthook>=2.0.4", "ruff>=0.14.7", "ty>=0.0.1a29"]
+
+[tool.ruff]
+select = [
+  "D",    # pydocstyle
+  "DOC",  # pydoclint
+  "E",    # pycodestyle errors
+  "F",    # pyflakes
+  "FAST", # FastAPI
+  "FURB", #refurb
+  "UP",   # pyupgrade
+  "I",    # isort
+  "N",    # PEP8
+  "PD",   # pandas-vet
+  "PL",   # pylynt
+  "NPY",  # numpy
+  "RUF",  # ruff
+  "UP",   # pyupgrade
+  "W",    # pycodestyle warnings
+  "ANN",  # flake8-annotations
+  "S",    # flake8-bandit
+  "B",    # flake8-bugbear
+  "A",    # flake8-builtins
+  "C4",   # flake8-comprehensions
+  "DTZ",  # flake8-datetimez
+  "EM",   # flake8-errmsg
+  "EXE",  # flake8-executable
+  "G",    # flake8-logging-format
+  "ISC",  # flake8-implicit-str-concat
+  "LOG",  # flake8-logging
+  "PT",   # flake8-pytest-style
+  "RET",  # flake8-return
+  "SIM",  # flake8-simplify
+  "PTH",  # flake8-use-pathlib
+  "TC",   # flake8-type-checking
+  "TID",  # flake8-tidy-imports
+]
